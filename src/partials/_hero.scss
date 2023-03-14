@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .hero_column_logobtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero_column_logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

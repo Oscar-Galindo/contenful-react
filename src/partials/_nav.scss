@@ -1,0 +1,34 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #eee;
+  
+  .navigation_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    
+    .navigation_column_logo {
+      flex-basis: 30%;
+      img {
+        max-width: 100%;
+      }
+    }
+    
+    .navigation_column_logobtn {
+      flex-basis: 70%;
+      text-align: right;
+      
+      a.btn {
+        display: inline-block;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
