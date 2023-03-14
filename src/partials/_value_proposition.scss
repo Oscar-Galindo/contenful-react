@@ -55,10 +55,11 @@ $value-img-space-between: 30px;
 
   h3 {
     font-family: $font-primary;
-    font-weight: $font-weight-medium;
-    font-size: 1.8rem;
-    color: $primary-color;
+    font-weight: bold;
+    font-size: 32px;
+    color: $tertiary-color;
     margin-bottom: 1rem;
+    text-transform: capitalize;
   }
 
   p {
