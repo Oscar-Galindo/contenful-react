@@ -43,14 +43,24 @@ function Hero() {
 
   return (
     <section className='hero' id='hero'>
-        <div className='hero_row'>
-          <div className='hero_column_logobtn'>
+        <div className='hero_flex'>
+            <div className='container-width'>
+          <div className='hero_content'>
             <h1>{heroTitle}</h1>
             <p>{heroText}</p>
-          <a href={heroBtnUrl} className="btn" target="_blank" rel="noopener noreferrer">{heroBtnTitle}</a>
+
+            <div className='hero_btn_container'>
+                <div className='hero_button'>
+                <a href={heroBtnUrl} className="btn-primary" target="_blank" rel="noopener noreferrer">{heroBtnTitle}</a>
+                </div>
+                <div className='tagline'>
+                    <p>{heroBtnText}</p>
+                </div>
+            </div>
           </div>
-          <div className='hero_column_logo'>
+          <div className='hero_img'>
             <img src={heroImages} alt="hero" />
+          </div>
           </div>
         </div>
       </section>

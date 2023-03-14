@@ -40,11 +40,23 @@ function ValueProposition() {
     const { valuePropositionImageThin, valuePropositionImageLarge,valuePropositionTitle,valuePropositionContent} = valueProposition || {};
 
 return (
-  <section className='' id=''>
-      <p>{valuePropositionTitle}</p>
-      <p>{valuePropositionContent}</p>
-      <img src={valuePropositionImageThin} alt='value proposition'/>
-      <img src={valuePropositionImageLarge} alt='value proposition'/>
+  <section className='value' id='value_proposition'>
+    <div className='value_flex'>
+      <div className='container-width'>
+        <div className='value_img'>
+          <div className='value_img_slim'>
+          <img src={valuePropositionImageThin} alt='value proposition'/>
+          </div>
+          <div className='value_img_thick'>
+          <img src={valuePropositionImageLarge} alt='value proposition'/>
+          </div>
+        </div>
+        <div className='value_content'>
+         <h3>{valuePropositionTitle}</h3>
+          <p>{valuePropositionContent}</p>        
+        </div>
+      </div>
+    </div>
     </section>
 )
 }

@@ -2,24 +2,128 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 
-  .hero_row {
+  .hero_flex {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 80%;
 
-    .hero_column_logobtn {
-      display: flex;
+    @media screen and (max-width: $tablet-width) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
 
-    .hero_column_logo {
+    @media screen and (max-width: $mobile-width) {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .container-width {
+      max-width: $container-width;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+
+ @media screen and (max-width: $mobile-width) {
+        max-width: 100%;
+      }
+      .hero_content {
+        max-width: 445px;
+        @media screen and (max-width: $tablet-width) {
+          margin-right: 0;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+  
+
+        h1 {
+          font-size: 56px;
+          line-height: 56px;
+          font-family: $font-primary;
+          color: $tertiary-color;
+          @media screen and (max-width: $tablet-width) {
+            font-size: 36px;
+            margin-bottom: 10px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          font-family: $font-secondary;
+          color: $accent-color;
+          margin-top: 26px;
+          margin-bottom: 26px;
+          line-height: 26px;
+          @media screen and (max-width: $tablet-width) {
+            font-size: 16px;
+            margin-bottom: 30px;
+          }
+        }
+
+        .hero_btn_container {
+          display: flex;
+          margin-top: 24px;
+          align-items: center;
+          @media screen and (max-width: $tablet-width) {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .hero_button {
+            margin-right: 16px;
+            @media screen and (max-width: $tablet-width) {
+              margin-right: 0;
+              margin-bottom: 20px;
+            }
+
+            .btn-primary {
+              background-color: $primary-color;
+              color: $white-color;
+              padding: 12px 24px;
+              border-radius: 4px;
+              text-decoration: none;
+              font-family: $font-secondary;
+              font-size: 18px;
+              font-weight: bold;
+              transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+              &:hover {
+                background-color: $secondary-color;
+                color: $white-color;
+              }
+            }
+          }
+
+          .tagline {
+            p {
+              font-size: 16px;
+              font-family: $font-secondary;
+              color: $accent-color;
+              margin-top: 0px;
+
+              @media screen and (max-width: $tablet-width) {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      .hero_img {
+        max-width: 540px;
+        margin-left: 64px;
+
+        @media screen and (max-width: $tablet-width) {
+          margin-left: 0;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
     }
   }
 }
