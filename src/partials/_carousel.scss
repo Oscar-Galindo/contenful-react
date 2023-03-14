@@ -74,21 +74,21 @@
         h2{
             font-size: 4.5em;
             line-height: 1.1;
-            color: $white;
+            color: #fff;
             margin-bottom: 10px;
             text-shadow: 0 3px 5px rgba(0,0,0,0.5);
-            @media (max-width: $breakPoint) {
+            @media (max-width: 500px) {
                 font-size: 2.5em;
             }
         }
         p {
             font-size: 1em;
-            color: $white;
+            color: #fff;
         }
         .btn {
             font-size: 1em;
-            color: $white;
-            background-color: $primaryColor;
+            color: #fff;
+            background-color: #000;
             display: inline-block;
             padding: 10px 30px;
             margin-top: 20px;
@@ -140,13 +140,13 @@
     .swiper-container {
       .swiper-button-prev,
       a.swiper-button-next {
-        color: $white;
+        color: #fff;
         top: auto;
         bottom: 20px;
         width: 40px;
         height: 40px;
         border-radius: 50px;
-        background-color: $primaryColor;
+        background-color: #000;
 
         &:after {
           font-size: 22px;

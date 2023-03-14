@@ -44,7 +44,6 @@ function Hero() {
   return (
     <section className='hero' id='hero'>
         <div className='hero_row'>
-          
           <div className='hero_column_logobtn'>
             <h1>{heroTitle}</h1>
             <p>{heroText}</p>

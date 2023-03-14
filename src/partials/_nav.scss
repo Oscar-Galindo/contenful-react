@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100px;
-  background-color: #eee;
+  background-color: $white-color;
   
   .navigation_row {
     display: flex;
@@ -22,12 +22,39 @@
       flex-basis: 70%;
       text-align: right;
       
-      a.btn {
+      .secondary-button {
         display: inline-block;
-        padding: 10px;
-        background-color: #333;
-        color: #fff;
+        padding: 12px 24px;
+        border-radius: 4px;
+        background-color: $light-color;
+        color: $tertiary-color;
         text-decoration: none;
+        font-family: $font-primary;
+        font-weight: bold;
+        font-size: 16px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      
+        &:hover {
+          background-color: $tertiary-color;
+          color: $white-color;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navigation_row {
+      flex-direction: column;
+      align-items: flex-start;
+      
+      .navigation_column_logo {
+        flex-basis: 100%;
+        margin-bottom: 16px;
+      }
+      
+      .navigation_column_logobtn {
+        flex-basis: 100%;
+        text-align: center;
       }
     }
   }

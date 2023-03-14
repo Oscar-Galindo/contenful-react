@@ -46,7 +46,7 @@ function KeyboardNavigation() {
             <img src={keyboardNavigationLogo} alt="hero" />
           </div>
           <div className='navigation_column_logobtn'>
-          <a href={keyboardNavigationB} className="btn" target="_blank" rel="noopener noreferrer">{keyboardNavigationTitle}</a>
+          <a href={keyboardNavigationB} className="secondary-button" target="_blank" rel="noopener noreferrer">{keyboardNavigationTitle}</a>
           </div>
         </div>
       </section>
