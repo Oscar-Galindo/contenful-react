@@ -1,6 +1,23 @@
- $breakPoint: 991px;
- $white: #fff;
- $textColor:#111;
- $primaryColor:#ff2173;
- $borderColor:#555;
- $textColorAlt:#333;
+// Global
+$container-width: 1280px;
+$container-sm-width: 1000px;
+
+// Define color variables
+$primary-color: #F16718;
+$secondary-color: #FF9B62;
+$tertiary-color: #162542;
+$accent-color: #7B8BAD;
+$light-color: #E8EFF2;
+$white-color: #FFFFFF;
+
+// Desktop widescreen
+$screen-widescreen: 1200px;
+
+// Desktop normal screen
+$screen-desktop: 992px;
+
+// Tablet
+$screen-tablet: 768px;
+
+// Mobile
+$screen-mobile: 576px;
