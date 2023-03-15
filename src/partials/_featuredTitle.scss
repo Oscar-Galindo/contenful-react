@@ -1,0 +1,49 @@
+.features_flex {
+    margin-top: 25px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  
+    .featuresContainer {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 20px;
+      max-width: 245px;
+  
+      .featuresIcon {
+        margin-bottom: 15px;
+        img {
+          display: block;
+          width: 100%;
+          max-width: 65px;
+          height: auto;
+        }
+      }
+  
+      .featuresTitle {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        max-width: 200px;
+        h4 {
+        font-family: $font-primary;
+        font-size: 24px;
+        font-weight: 900;
+        color: $tertiary-color;
+        }
+      }
+  
+      .featuresContent {
+        p {
+          color: $accent-color;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .features_flex {
+        flex-direction: column;
+    }
+  }

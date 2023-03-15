@@ -38,12 +38,20 @@ function FeaturedTitle() {
   }, [getFeatures]);
 
   return (
-    <div>
+    <div className='features_flex'>
       {features.map(item => (
         <div key={item.id}>
+          <div className='featuresContainer'>
+          <div className='featuresIcon'>
           <img src={item.featureImages} alt="featured" />
-          <h2>{item.featureTitle}</h2>
+          </div>
+          <div className='featuresTitle'>
+          <h4>{item.featureTitle}</h4>
+          </div>
+          <div className='featuresContent'>
           <p>{item.featureText}</p>
+          </div>
+          </div>
         </div>
       ))}
     </div>
